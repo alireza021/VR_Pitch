@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 299861118}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,9 +118,144 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &17436482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 17436484}
+  - component: {fileID: 17436483}
+  m_Layer: 0
+  m_Name: GestureDetection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &17436483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17436482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bea1b488f6d85246a6b426a8a9398c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeleton: {fileID: 2095489590}
+  gestures:
+  - name: ThumbsUp
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069318, y: -0.011554103, z: -0.0104965605}
+    - {x: -0.03265834, y: -0.012402767, z: -0.031907808}
+    - {x: -0.056409612, y: -0.011750849, z: -0.054101262}
+    - {x: -0.08404605, y: -0.00881935, z: -0.073326275}
+    - {x: -0.09599625, y: -0.0073164487, z: -0.023550723}
+    - {x: -0.11470168, y: -0.04015063, z: -0.020309495}
+    - {x: -0.090940274, y: -0.045095213, z: -0.021580545}
+    - {x: -0.09564662, y: -0.0025431465, z: -0.0017258739}
+    - {x: -0.110959746, y: -0.042561598, z: 0.0008742411}
+    - {x: -0.08463616, y: -0.048500445, z: -0.004673648}
+    - {x: -0.0886938, y: -0.0065293037, z: 0.017465267}
+    - {x: -0.10046366, y: -0.04369413, z: 0.016493987}
+    - {x: -0.07513069, y: -0.045289755, z: 0.008630074}
+    - {x: -0.03407358, y: -0.009419828, z: 0.022998529}
+    - {x: -0.077895865, y: -0.013691176, z: 0.035054106}
+    - {x: -0.087964326, y: -0.042114746, z: 0.029182838}
+    - {x: -0.069210626, y: -0.042845596, z: 0.021416461}
+    - {x: -0.09675248, y: -0.0042464156, z: -0.093913816}
+    - {x: -0.07743633, y: -0.027330602, z: -0.023402922}
+    - {x: -0.06960635, y: -0.029480333, z: -0.010754548}
+    - {x: -0.064554326, y: -0.023537304, z: 0.0055665355}
+    - {x: -0.058405705, y: -0.023937289, z: 0.01861286}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: Rabbit
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069353, y: -0.011554086, z: -0.010496519}
+    - {x: -0.03662588, y: -0.020627586, z: -0.026658246}
+    - {x: -0.055046916, y: -0.04407109, z: -0.03962579}
+    - {x: -0.08040902, y: -0.06614712, z: -0.036250878}
+    - {x: -0.09599623, y: -0.0073164734, z: -0.023550685}
+    - {x: -0.116353214, y: -0.03925248, z: -0.025591606}
+    - {x: -0.10286597, y: -0.059187196, z: -0.022219751}
+    - {x: -0.095646635, y: -0.0025431619, z: -0.0017259058}
+    - {x: -0.13785483, y: -0.010293073, z: -0.00065935013}
+    - {x: -0.16474387, y: -0.016224448, z: 0.0002226113}
+    - {x: -0.08869384, y: -0.0065292805, z: 0.017465249}
+    - {x: -0.12660156, y: 0.00068091677, z: 0.023096804}
+    - {x: -0.15247512, y: 0.005275018, z: 0.027045982}
+    - {x: -0.03407355, y: -0.009419842, z: 0.022998573}
+    - {x: -0.07789585, y: -0.013691176, z: 0.035054058}
+    - {x: -0.10572795, y: -0.0040778327, z: 0.043811973}
+    - {x: -0.12381432, y: 0.0015442631, z: 0.051148728}
+    - {x: -0.096667826, y: -0.07989284, z: -0.023885027}
+    - {x: -0.08247661, y: -0.06711405, z: -0.01745554}
+    - {x: -0.18966956, y: -0.015919691, z: 0.0020253088}
+    - {x: -0.17585321, y: 0.011614692, z: 0.029818382}
+    - {x: -0.14406206, y: 0.007922742, z: 0.056758903}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls: []
+  - name: ThumbsDown
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069309, y: -0.011554092, z: -0.010496504}
+    - {x: -0.033518855, y: -0.014103389, z: -0.031239294}
+    - {x: -0.055336174, y: -0.022089517, z: -0.053983916}
+    - {x: -0.07840692, y: -0.024549417, z: -0.07855346}
+    - {x: -0.09599625, y: -0.007316477, z: -0.023550725}
+    - {x: -0.11611595, y: -0.038927443, z: -0.01768327}
+    - {x: -0.09305696, y: -0.045504943, z: -0.021643981}
+    - {x: -0.09564663, y: -0.0025431656, z: -0.0017258606}
+    - {x: -0.110281326, y: -0.042826194, z: 0.000688773}
+    - {x: -0.08387513, y: -0.048472095, z: -0.00477159}
+    - {x: -0.08869382, y: -0.0065293238, z: 0.01746527}
+    - {x: -0.09637502, y: -0.044719674, z: 0.015678339}
+    - {x: -0.07121845, y: -0.047411896, z: 0.0075516757}
+    - {x: -0.03407356, y: -0.009419826, z: 0.02299863}
+    - {x: -0.07789588, y: -0.013691216, z: 0.035054054}
+    - {x: -0.0830723, y: -0.04309837, z: 0.027831452}
+    - {x: -0.064395174, y: -0.044419557, z: 0.01995924}
+    - {x: -0.09232235, y: -0.027172465, z: -0.09869519}
+    - {x: -0.07600406, y: -0.031502485, z: -0.02543737}
+    - {x: -0.0680806, y: -0.030064084, z: -0.0107978685}
+    - {x: -0.057526607, y: -0.02773078, z: 0.0031244794}
+    - {x: -0.05158542, y: -0.027128408, z: 0.015593718}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls: []
+  debugMode: 1
+--- !u!4 &17436484
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17436482}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &188988155
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +304,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -193,6 +329,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!33 &188988158
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -215,6 +352,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!850595691 &299861118
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 2
+  m_GIWorkflowMode: 0
+  m_EnableBakedLightmaps: 1
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 1
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 500
+  m_PVREnvironmentSampleCount: 500
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRRussianRouletteStartBounce: 2
+  m_PVREnvironmentMIS: 0
+  m_PVRFilteringMode: 2
+  m_PVRDenoiserTypeDirect: 0
+  m_PVRDenoiserTypeIndirect: 0
+  m_PVRDenoiserTypeAO: 0
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!4 &693348063 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a,
@@ -503,6 +701,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+--- !u!114 &2095489590 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114567484643301796, guid: 835e735ca71bf78459fb2cababd74112,
+    type: 3}
+  m_PrefabInstance: {fileID: 1015456233}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2609c54f376cffc4da1ab9401cc1a36f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &2145372864 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a,
