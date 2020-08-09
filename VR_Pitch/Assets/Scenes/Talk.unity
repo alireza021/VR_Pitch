@@ -3197,6 +3197,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Female Sitting Pose
       objectReference: {fileID: 0}
+    - target: {fileID: 1978679956972732495, guid: c778266453b391a4799fd4912a031a50,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c778266453b391a4799fd4912a031a50, type: 3}
 --- !u!1 &512891964 stripped
@@ -4481,6 +4486,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.54353446
       objectReference: {fileID: 0}
+    - target: {fileID: -5738929356375114689, guid: 0ce4948e0689eac41a5d7b22a4fc0990,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     - target: {fileID: 919132149155446097, guid: 0ce4948e0689eac41a5d7b22a4fc0990,
         type: 3}
       propertyPath: m_Name
@@ -5004,6 +5014,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sitting (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4222916509183795926, guid: 6c0b7985f3f0ce1448f3327ce4c89293,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c0b7985f3f0ce1448f3327ce4c89293, type: 3}
 --- !u!1 &752495448 stripped
@@ -6788,6 +6803,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8691159933939214003, guid: 8c6cdfc2bd45d424eab968767a475124,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     - target: {fileID: -8679921383154817045, guid: 8c6cdfc2bd45d424eab968767a475124,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12450,6 +12470,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sitting (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6180351430152274116, guid: 8a02c5ba26ae0dc458bbe1d70106b74d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8a02c5ba26ae0dc458bbe1d70106b74d, type: 3}
 --- !u!1 &1770290999 stripped
@@ -12875,6 +12900,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Male Sitting Pose
       objectReference: {fileID: 0}
+    - target: {fileID: 2342956203822869081, guid: 2c18117a92ed2204b9e7a7f1f6d9bdcf,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c37e43c8ecc013c4a90e9dfa2b7a6569, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2c18117a92ed2204b9e7a7f1f6d9bdcf, type: 3}
 --- !u!1 &1846339599 stripped
